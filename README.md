@@ -3,7 +3,7 @@
 ![ETLdiagram](Resources/etl_pic.png)
 
 ## Overview
-Building an ETL pipeline utilizing Python, Pandas, and Python dictionary methods to extract and transform the data. After this process, we created 4 csv files, and used the CSV fiels to create an ERD and a table schema. The CSV files were then upladed into a Postgres database. 
+Building an ETL pipeline utilizing Python, Pandas, and Python dictionary methods to extract and transform the data. After this process, we created 4 CSV files, and used the CSV files to create an ERD and a table schema. The CSV files were then uploaded into a Postgres database. 
 
 ## Contributors
 - Julia Liou
@@ -14,7 +14,7 @@ Building an ETL pipeline utilizing Python, Pandas, and Python dictionary methods
 - [crowdfunding](Resources/crowdfunding.xlsx)
 - [contacts](Resources/contacts.xlsx)
 
-- Software utilized:
+### Software utilized:
 Jupyter Notebooks, Pandas, Numpy, PostGresSQL, QuickDBD
 
 ## Data Extraction and Transformation
