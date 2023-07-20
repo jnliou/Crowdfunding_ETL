@@ -3,7 +3,7 @@
 ![ETLdiagram](Resources/etl_pic.png)
 
 ## Overview
-Building an ETL pipeline utilizing Python, Pandas, and Python dictionary methods to extract and transform the data. After this process, we created 4 CSV files, and used the CSV files to create an ERD and a table schema. The CSV files were then uploaded into a Postgres database. 
+This project is aimed to get a better understanding of the ETL pipeline. In this project we built an ETL pipeline utilizing Python, Pandas, and Python dictionary methods to extract and transform the data. After this process, we created 4 CSV files, and used the CSV files to create an ERD and a table schema. The CSV files were then uploaded into a Postgres database. 
 
 ## Contributors
 - Julia Liou
@@ -15,9 +15,11 @@ Building an ETL pipeline utilizing Python, Pandas, and Python dictionary methods
 - [contacts](Resources/contacts.xlsx)
 
 ### Software utilized:
-Jupyter Notebooks, Pandas, Numpy, PostGresSQL, QuickDBD
+Jupyter Notebooks, Pandas, Numpy, PostGresSQL, QuickDBD, pgAdmin4
 
-## Data Extraction and Transformation
+## Data Extraction and Transformation 
+
+File location for code: [ETL Mini Project](ETL_Mini_Project_JLiou_OKilicarslan.ipynb)
 
 ### Category DataFrames
 - A DataFrame is created for categories.
@@ -45,18 +47,18 @@ Jupyter Notebooks, Pandas, Numpy, PostGresSQL, QuickDBD
 ## Database Creation and Import
 ### Crowdfunding Database
 - Utilizing the 4 CSV files created, we created a ERD:
-![ERD for Crowdfunding Database](<Resources/ERD - crowdfunding_db.PNG.png>)
+![ERD](<Resources/ERD - crowdfunding_db.png>)
 
 - We created a table schema for each CSV file (which includes the primary keys, foreign keys, and other constraints)
-- The Database schema is crated as a Postgres file named crowdfunding_db_schema.sql 
-- A new Postgres darabase was created: crowdfunding_db
-- Import each CSV file into it's corresponding SQL table
-- Can verify that each table has the correct data by running a SELECT statement for each.
+- The Database schema is created as a Postgres file named [crowdfunding_db_schema.sql ](crowdfunding_db_schema.sql)
+- A new Postgres database was created: crowdfunding_db with tables for campaign, category, subcategory, and contacts 
+- We can import each CSV file into it's corresponding SQL table
+- We can verify that each table has the correct data by running a SELECT statement for each. (See screenshots utilizing the SELECT statement for each table in [ SQL_screenshots](SQL_screenshots) for your reference.) 
 
 ## Usage
 To run the ETL pipeline and populate the PostgreSQL database:
 
 - Ensure you have Python and the required dependencies installed.
-- Execute the [Jupyter Notebook](ETL_Mini_Project_JLiou_OKilicarslan.ipynb.ipynb) containing the ETL pipeline code.
-- Verify that the CSV files are created and the PostgreSQL database is populated.
+- Execute the [Jupyter Notebook](ETL_Mini_Project_JLiou_OKilicarslan.ipynb) containing the ETL pipeline code.
+- Verify that the CSV files (contacts, campaign, category, subcategory) are created and the PostgreSQL database is populated.
 - Use SELECT statements to retrieve and analyze the data from the database.
