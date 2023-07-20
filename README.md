@@ -23,19 +23,19 @@ Jupyter Notebooks, Pandas, Numpy, PostGresSQL, QuickDBD
 - A DataFrame is created for categories.
 - The DataFrame contains a "category_id" column with sequential entries from "cat1" to "catn" for unique categories.
 - The DataFrame has a "category" column that contains only the category titles.
-- The category DataFrame is exported as category.csv.
+- The category DataFrame is exported as [category.csv](Resources/category.csv).
 
 ### Subcategory DataFrame
 - A DataFrame is created for subcategories.
 - The DataFrame contains a "subcategory_id" column with sequential entries from "subcat1" to "subcatn" for unique subcategories.
 - The DataFrame contains a "subcategory" column that contains only the subcategory titles.
-- The subcategory DataFrame is exported as subcategory.csv.
+- The subcategory DataFrame is exported as [subcategory.csv](Resources/subcategory.csv).
 
 ### Campaign Dataframe 
 - A DataFrame is created for campaigns.
 - The DataFrame includes various columns such as "cf_id", "contact_id", "company_name", "description", "goal", "pledged", "outcome", "backers_count", "country", "currency", "launch_date", "end_date", "category_id", and "subcategory_id".
 - The "launch_date" and "end_date" columns are formatted as "YYYY-MM-DD".
-- The campaign DataFrame is exported as campaign.csv.
+- The campaign DataFrame is exported as [campaign.csv](Resources/campaign.csv).
 
 ### Contacts DataFrame
 - A DataFrame is created for contacts.
@@ -45,6 +45,8 @@ Jupyter Notebooks, Pandas, Numpy, PostGresSQL, QuickDBD
 ## Database Creation and Import
 ### Crowdfunding Database
 - Utilizing the 4 CSV files created, we created a ERD:
+![ERD for Crowdfunding Database](<Resources/ERD - crowdfunding_db.PNG.png>)
+
 - We created a table schema for each CSV file (which includes the primary keys, foreign keys, and other constraints)
 - The Database schema is crated as a Postgres file named crowdfunding_db_schema.sql 
 - A new Postgres darabase was created: crowdfunding_db
