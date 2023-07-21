@@ -3,7 +3,7 @@
 ![ETLdiagram](Resources/etl_pic.png)
 
 ## Overview
-This project is aimed to get a better understanding of the ETL pipeline. In this project we built an ETL pipeline utilizing Python, Pandas, and Python dictionary methods to extract and transform the data. After this process, we created 4 CSV files, and used the CSV files to create an ERD and a table schema. The CSV files were then uploaded into a Postgres database. 
+This project is aimed to get a better understanding of the ETL pipeline. In this project we built an ETL pipeline utilizing Python, Pandas, and Python dictionary methods to extract and transform the data. After this process, we created 4 CSV files, and used the CSV files to create an ERD and a table schema. The CSV files were then uploaded into a PostGres database. 
 
 ## Contributors
 - Julia Liou
@@ -21,31 +21,31 @@ Jupyter Notebooks, Pandas, Numpy, PostGresSQL, QuickDBD, pgAdmin4
 
 File location for code: [ETL Mini Project](ETL_Mini_Project_JLiou_OKilicarslan.ipynb)
 
-### Category DataFrames
+### Category DataFrames - Oguz
 - A DataFrame is created for categories.
 - The DataFrame contains a "category_id" column with sequential entries from "cat1" to "catn" for unique categories.
 - The DataFrame has a "category" column that contains only the category titles.
 - The category DataFrame is exported as [category.csv](Resources/category.csv).
 
-### Subcategory DataFrame
+### Subcategory DataFrame - Oguz
 - A DataFrame is created for subcategories.
 - The DataFrame contains a "subcategory_id" column with sequential entries from "subcat1" to "subcatn" for unique subcategories.
 - The DataFrame contains a "subcategory" column that contains only the subcategory titles.
 - The subcategory DataFrame is exported as [subcategory.csv](Resources/subcategory.csv).
 
-### Campaign Dataframe 
+### Campaign Dataframe - Oguz
 - A DataFrame is created for campaigns.
 - The DataFrame includes various columns such as "cf_id", "contact_id", "company_name", "description", "goal", "pledged", "outcome", "backers_count", "country", "currency", "launch_date", "end_date", "category_id", and "subcategory_id".
 - The "launch_date" and "end_date" columns are formatted as "YYYY-MM-DD".
 - The campaign DataFrame is exported as [campaign.csv](Resources/campaign.csv).
 
-### Contacts DataFrame
+### Contacts DataFrame - Julia
 - A DataFrame is created for contacts.
 - The DataFrame includes columns for "contact_id", "first_name", "last_name", and "email".
 - The contacts DataFrame is exported as [contacts.csv](Resources/contacts.csv).
 
 ## Database Creation and Import
-### Crowdfunding Database
+### Crowdfunding Database - Julia 
 - Utilizing the 4 CSV files created, we created a ERD:
 ![ERD](<Resources/ERD - crowdfunding_db.png>)
 
